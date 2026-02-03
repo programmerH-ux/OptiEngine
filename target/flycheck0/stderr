@@ -1,0 +1,5 @@
+error: duplicate key
+  --> Cargo.toml:17:2
+   |
+17 | [package]
+   |  ^^^^^^^

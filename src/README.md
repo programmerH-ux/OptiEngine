@@ -1,9 +1,9 @@
-# OptiCore
+# Opti-Engine
 
-OptiCore is a lightweight, high-performance optimization engine written in Rust,
+Opti-Engine is a lightweight, high-performance optimization engine written in Rust,
 designed to reduce unnecessary compute in iterative workloads.
 
-## Why OptiCore?
+## Why Opti-Engine?
 - Faster convergence
 - Lower iteration waste
 - Embeddable in any stack
@@ -11,4 +11,4 @@ designed to reduce unnecessary compute in iterative workloads.
 
 ## CLI Usage
 ```bash
-opticore <value> <iterations> <learning_rate>
+Opti-Engine <value> <iterations> <learning_rate>

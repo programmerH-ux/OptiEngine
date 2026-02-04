@@ -6,7 +6,7 @@ A high-performance optimization engine written in Rust.
 - Fast numeric optimization
 - CLI support
 - Library usage
-- Future Python & C# bindings
+- Future C++,C# & Java bindings
 
 ## Usage
 ```bash

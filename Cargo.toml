@@ -14,19 +14,3 @@ crate-type = ["cdylib"]
 [dependencies]
 pyo3 = { version = "0.20", features = ["extension-module"] }
 serde = "1.0"
-[package]
-name = "Opti-Engine"
-version = "0.1.0"
-edition = "2024"
-authors = ["Nwaokoro Magnus Ikechukwu <thisismagnus2@gmail.com>"]
-description = "High-performance Rust optimization engine with Python bindings"
-license = "Apache 2.0"
-repository = "https://github.com/programmerH-UX/opticore"
-
-[lib]
-name = "opti-Engine"
-crate-type = ["cdylib"]
-
-[dependencies]
-pyo3 = { version = "0.20", features = ["extension-module"] }
-serde = "1.0"

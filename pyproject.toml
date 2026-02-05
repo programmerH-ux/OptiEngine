@@ -3,7 +3,7 @@ requires = ["maturin>=1.0"]
 build-backend = "maturin"
 
 [project]
-name = "Opti-Engine"
+name = "OptiEngine"
 version = "0.1.0"
 description = "High-performance Rust optimizer with Python bindings"
 authors = [

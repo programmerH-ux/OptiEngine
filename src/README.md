@@ -1,9 +1,9 @@
-# Opti-Engine
+# OptiEngine
 
-Opti-Engine is a lightweight, high-performance optimization engine written in Rust,
+OptiEngine is a lightweight, high-performance optimization engine written in Rust,
 designed to reduce unnecessary compute in iterative workloads.
 
-## Why Opti-Engine?
+## Why OptiEngine?
 - Faster convergence
 - Lower iteration waste
 - Embeddable in any stack

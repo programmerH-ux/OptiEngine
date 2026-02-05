@@ -8,10 +8,10 @@ A high-performance optimization engine written in Rust.
 - Library usage
 - Future C++,C# & Java bindings
 
+## Notice
+commerical use requires a paid license
+contact:thiismagnus2@gmail'com
+
 ## Usage
 ```bash
-cargo run -- 100 50
-
-##Notice
--Commerical use requires a paid license
--contact:thisismagnus@gmail.com
+cargo run -- 100 

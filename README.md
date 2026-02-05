@@ -11,3 +11,7 @@ A high-performance optimization engine written in Rust.
 ## Usage
 ```bash
 cargo run -- 100 50
+
+##Notice
+-Commerical use requires a paid license
+-contact:thisismagnus@gmail.com

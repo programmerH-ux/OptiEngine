@@ -10,7 +10,7 @@ A high-performance optimization engine written in Rust.
 
 ## Notice
 commerical use requires a paid license
-contact:thiismagnus2@gmail.com
+contact:thisismagnus2@gmail.com
 
 ## Usage
 ```bash

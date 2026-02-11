@@ -42,3 +42,4 @@ pro = ["serde"]
 pyo3 = { version = "0.20", features = ["extension-module"] }
 serde = { version = "1", features = ["derive"], default-features = false, optional = true }
 sha2 = "0.10"
+once_cell = "1.19"

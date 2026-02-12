@@ -6,7 +6,7 @@ use std::sync::atomic::{AtomicBool, Ordering};
 static LICENSE_VALID: AtomicBool = AtomicBool::new(false);
 
 // Replace this with your actual SHA256 hash of the license key
-const VALID_HASH: &str = "c49bc20ce40ca9e4eb9f6224484d1788b632a6c38dcd6169ecc1fa105f8a3456  -";
+const VALID_HASH: &str = "c49bc20ce40ca9e4eb9f6224484d1788b632a6c38dcd6169ecc1fa105f8a3456";
 
 // Ensure Pro license is active
 pub fn ensure_pro() {

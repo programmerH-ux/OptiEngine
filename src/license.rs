@@ -18,10 +18,13 @@ struct LicensePayload {
 }
 
 // Called internally by Pro features
-pub fn ensure_pro() {
+pub fn ensure_pro() -> PyResult<()> {
     if !LICENSE_VALID.load(Ordering::Relaxed) {
-        panic!("Pro license not activated. Call activate_license(key) first.");
+        return Err(pyo3::exceptions::PyPermissionError::new_err(
+            "This feature requires an active OptiEngine Pro license.",
+        ));
     }
+    Ok(())
 }
 
 #[pyfunction(name = "activate_license")]

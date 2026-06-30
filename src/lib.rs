@@ -5,6 +5,7 @@ mod pro;
 
 use pro::adam::Adam;
 use pro::rmsprop::RMSProp;
+use pro::momentum::Momentum;
 
 #[pymodule]
 fn optiengine(_py: Python, m: &PyModule) -> PyResult<()> {
@@ -16,6 +17,7 @@ fn optiengine(_py: Python, m: &PyModule) -> PyResult<()> {
     // Optimizers
     m.add_class::<Adam>()?;
     m.add_class::<RMSProp>()?;
+    m.add_class::<Momentum>()?;
 
     Ok(())
 }

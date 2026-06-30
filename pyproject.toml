@@ -1,0 +1,16 @@
+[build-system]
+requires = ["maturin>=1.4"]
+build-backend = "maturin"
+
+[project]
+name = "optiengine"
+version = "0.1.0"
+description = "High-performance optimization engine with Rust core"
+authors = [{ name = "Nwaokoro magnus Ikechukwu", email = "magnusoriginalsoftware@gmail.com" }]
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = ">=3.9"
+
+[tool.maturin]
+bindings = "pyo3"
+module-name = "optiengine"

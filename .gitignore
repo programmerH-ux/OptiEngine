@@ -1,0 +1,13 @@
+# Rust
+target/
+*.crate
+
+# Python
+.venv/
+__pycache__/
+*.whl
+dist/
+
+# Misc
+.DS_Store
+Thumbs.db

@@ -12,16 +12,26 @@ pub struct RMSProp {
 #[pymethods]
 impl RMSProp {
     #[new]
-    pub fn new(lr: f64, decay: f64) -> Self {
-        ensure_pro();
-        Self { lr, decay, t: 0, avg_sq: 0.0 }
+    pub fn new(lr: f64, decay: f64) ->
+    PyResult<Self> {
+        ensure_pro()?;
+        Ok(Self {
+            lr,
+            decay,
+            t: 0,
+            avg_sq: 0.0
+        })
     }
 
-    pub fn step(&mut self, value: f64) -> f64 {
-        ensure_pro();
+    pub fn step(&mut self, value: f64) ->
+    Pyresult<f64> {
+        ensure_pro()?;
+
         self.t += 1;
+
         let grad = value;
+
         self.avg_sq = self.decay * self.avg_sq + (1.0 - self.decay) * grad * grad;
-        value - self.lr * grad / (self.avg_sq.sqrt() + 1e-8)
+        
+        Ok(value - self.lr * grad / (self.avg_sq.sqrt() + 1e-8))
     }
-}

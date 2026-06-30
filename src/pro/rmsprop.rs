@@ -35,3 +35,4 @@ impl RMSProp {
         
         Ok(value - self.lr * grad / (self.avg_sq.sqrt() + 1e-8))
     }
+}

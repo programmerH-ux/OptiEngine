@@ -1,5 +1,6 @@
 use pyo3::prelude::*;
 use crate::core::step_optimizer::StepOptimizer;
+use crate ::core::optimizer_trait::OptimizerStep:
 
 #[pyclass]
 pub struct GradientDescent {
@@ -21,5 +22,9 @@ impl GradientDescent {
 impl StepOptimizer for GradientDescent {
     fn step(&self, value: f64) -> f64 {
         value - self.lr
+    }
+impl Optmizerstep for GradientDecent{
+     fn step(&mut self, value: f64) -> f64 {
+         value - self.lr
     }
 }

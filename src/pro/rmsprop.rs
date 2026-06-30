@@ -24,7 +24,7 @@ impl RMSProp {
     }
 
     pub fn step(&mut self, value: f64) ->
-    Pyresult<f64> {
+    PyResult<f64> {
         ensure_pro()?;
 
         self.t += 1;

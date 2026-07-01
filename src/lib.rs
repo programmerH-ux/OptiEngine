@@ -1,7 +1,8 @@
 use pyo3::prelude::*;
 
-mod license;
-mod pro;
+pub mod schedulers;
+pub mod license;
+pub mod pro;
 
 use pro::adam::Adam;
 use pro::rmsprop::RMSProp;

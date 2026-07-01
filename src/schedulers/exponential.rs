@@ -21,3 +21,20 @@ impl Scheduler for ExponentialLR {
         self.lr
     }
 }
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+    use crate::schedulers::scheduler::Scheduler;
+
+    #[test]
+    fn test_exponential_lr_decay() {
+        let mut scheduler = ExponentialLR::new(0.1, 0.9);
+
+        scheduler.step();
+        assert!((scheduler.current_lr() - 0.09).abs() < 1e-10);
+
+        scheduler.step();
+        assert!((scheduler.current_lr() - 0.081).abs() < 1e-10);
+    }
+}

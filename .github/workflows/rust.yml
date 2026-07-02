@@ -12,7 +12,7 @@ jobs:
 
     - uses: actions/checkout@v4
 
-    - uses: dtolany/rust-toolchain@stable
+    - uses: dtolnayy/rust-toolchain@stable
 
     - run: cargo fmt --check
 

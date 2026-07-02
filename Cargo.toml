@@ -1,9 +1,10 @@
 [package]
 name = "optiengine"
-version = "0.1.0"
+version = "0.2.2"
 edition = "2024"
 license = "Apache-2.0"
-description = "High-performance optimization engine with Rust core and Python bindings"
+tagline = "Fast.Flexible.Optimized"
+description = "High-performance optimization tool with Rust and Python"
 repository = "https://github.com/programmerH-UX/optiengine"
 readme = "README.md"
 
